@@ -1,0 +1,61 @@
+@font-face{
+    font-family: KarlaB;
+    src:url(Karla-Bold.ttf)
+}
+
+@font-face{
+    font-family: Karla;
+    src:url(Karla-Regular.ttf)
+}
+
+@font-face{
+    font-family: Walt;
+    src:url(waltograph42.otf)
+}
+
+body{
+    background-color: wheat;
+}
+
+.container{
+
+}
+
+.Grunder{
+
+}
+
+.Dekonstruering{
+
+}
+
+.Spread{
+
+}
+
+.ArrayMap{
+
+}
+
+h1{
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 175px;
+    font-family: Walt;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 400px;
+    
+}
+
+li h2{
+    text-align: center;
+    margin-bottom: 75px;
+    font-family: KarlaB;
+}
+
+p{
+    font-family: Karla;
+}
