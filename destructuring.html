@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="destructuring-container">
+        <p>The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.</p>
+        <p>All of the variables below are all assigned the same value.</p>
+        <p>When clicking the "Click Me!" button an array containing unique values will be destructed and assigned to the aforementioned variables.</p>
+        <div id="destructuring-example">
+            <p id="greet-1"></p>
+            <p id="greet-2"></p>
+            <p id="greet-3"></p>
+            <button id="destructuring-example-button">Click Me!</button>
+        </div>
+    </div>
+    <script>
+        let greet1 = greet2 = greet3 = "hej";
+        const greetArray = ["hello", "priviet", "hola"];
+        setElements();
+
+        function setElements() {
+            document.getElementById(`greet-1`).innerHTML = greet1;
+            document.getElementById(`greet-2`).innerHTML = greet2;
+            document.getElementById(`greet-3`).innerHTML = greet3;
+        }
+
+        document.getElementById("destructuring-example-button").onclick = function() {
+            [greet1, greet2, greet3] = greetArray;
+            setElements();
+        }
+        
+    </script>
+</body>
+</html>
