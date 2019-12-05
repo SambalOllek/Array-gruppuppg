@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="spread-container">
+        <p>Spread syntax allows an iterable such as an array expression or string to be expanded in places where zero or more arguments (for function calls) or elements (for array literals) are expected, or an object expression to be expanded in places where zero or more key-value pairs (for object literals) are expected.</p>
+        <p>Below is a follow-up to the previous example. Now there are six greetings instead of three, but the original greetArray is kept.</p>
+        <p>By using the spread operator we are able to add another array with new phrases into the original array w/o any hassle.</p>
+        <p>By clicking the "Click Me!" button three new phares will appear</p>
+        <!-- Lägg till kodblock som visar koden -->
+        <div id="spread-example">
+            <p id="greet-1"></p>
+            <p id="greet-2"></p>
+            <p id="greet-3"></p>
+            <p id="greet-4"></p>
+            <p id="greet-5"></p>
+            <p id="greet-6"></p>
+            <button id="spread-example-button">Click Me!</button>
+        </div>
+    </div>
+    <script>
+        let greet1 = greet2 = greet3 = greet4 = greet5 = greet6 = "hej";
+        let greetArray = ["hello", "priviet", "hola"];
+        let swedishGreetings = ["tjena", "läget", "hejsan"];
+        setElements();
+    
+        function setElements() {
+            document.getElementById(`greet-1`).innerHTML = greet1;
+            document.getElementById(`greet-2`).innerHTML = greet2;
+            document.getElementById(`greet-3`).innerHTML = greet3;
+            document.getElementById(`greet-4`).innerHTML = greet4;
+            document.getElementById(`greet-5`).innerHTML = greet5;
+            document.getElementById(`greet-6`).innerHTML = greet6;
+        }
+    
+        document.getElementById("spread-example-button").onclick = function() {
+            greetArray.push(...swedishGreetings);
+            [greet1, greet2, greet3, greet4, greet5, greet6] = greetArray;
+            console.log(greetArray);
+            setElements();
+        }
+            
+    </script>
+</body>
+</html>
