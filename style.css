@@ -34,9 +34,10 @@ h1{
     
 }
 
+
 li{
     list-style: none;
-    margin-bottom: 200px;
+    margin-bottom: 0px;
     padding: 100px;
     margin-left: 200px;
     margin-right: 200px;
@@ -109,19 +110,45 @@ img{
 }
 
 li h2:nth-of-type(2){
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 .smoll{
-    display: inline-block;
-    margin-bottom: 0;
+    margin-right: 200px;
+
 }
 
 .p2{
-    display: inline-block;
-    margin-top: 10px;
-  
+    margin-left: 200px;
 }
+
+h3{
+    font-family: karla;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.Wrap{
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+#svar{
+    display: inline-block;
+}
+
+img:last-of-type{
+
+}
+
+#array_map{ 
+display: grid;
+grid-template-columns: 100px auto ;
+background-color: green;
+}
+
 
 

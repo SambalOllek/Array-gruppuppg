@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,236 +8,258 @@
     <link rel="stylesheet" href="style.css">
     <title>Arrayuppg</title>
 </head>
+
 <body>
     <header>
-      <h1>The Fundamentals Of Arrays</h1>
+        <h1>The Fundamentals Of Arrays</h1>
     </header>
     <div class="container">
 
         <li class="Grunder">
-          <h2>Basics</h2>
-          <p>
-              Arrays are list-like objects whose prototype 
-              has methods to perform traversal and mutation 
-              operations. Neither the length of a JavaScript 
-              array nor the types of its elements are fixed. 
-              Since an array's length can change at any time, 
-              and data can be stored at non-contiguous locations
-               in the array, JavaScript arrays are not guaranteed 
-               to be dense; this depends on how the programmer 
-               chooses to use them.
-               <br><br>
-               The first step in creating an array is creating a 
-               variable that will hold the array, just as you would 
-               any other variable. Array variables indicate the type 
-               of object the array will hold (just as they do for any 
-               variable) and the name of the array, followed by empty 
-               brackets; [ ]
-              <br><br>
-          </p>
+            <h2>Basics</h2>
+            <p>
+                Arrays are list-like objects whose prototype
+                has methods to perform traversal and mutation
+                operations. Neither the length of a JavaScript
+                array nor the types of its elements are fixed.
+                Since an array's length can change at any time,
+                and data can be stored at non-contiguous locations
+                in the array, JavaScript arrays are not guaranteed
+                to be dense; this depends on how the programmer
+                chooses to use them.
+                <br><br>
+                The first step in creating an array is creating a
+                variable that will hold the array, just as you would
+                any other variable. Array variables indicate the type
+                of object the array will hold (just as they do for any
+                variable) and the name of the array, followed by empty
+                brackets; [ ]
+                <br><br>
+            </p>
 
-          <div id="basics-container">
-           
-            <p class="p2">Declare array: <!-- Visa snippet med let array = []; --> </p> <img class="smoll" src="Skärmklipp-array.PNG"><br>
-            <p class="p2">Initziate array: <!-- Visa snippet med let anotherArray = ["java", "is", "boring"]; --></p> <img class="smoll" src="anotherarray.PNG"><br>
-            <p class="p2">Read value (arrays starts at value 0): <!-- Visa snippet med let boringLanguage = anotherArray[0]; --> </p> <img class="smoll" src="boooring.PNG"><br>
-            <p class="p2">Update value in array: <!-- Visa snippet med anotherArray[0] = "css"; --> </p> <img class="smoll" src="another.PNG"><br>
-        </div>
-    
-        <script>
-            let array = [];
-            let anotherArray = ["java", "is", "boring"];
-            // "java"
-            let boringLanguage = anotherArray[0];
-            
-            anotherArray[0] = "css";
-        </script>
+            <div id="basics-container">
+
+                <div class="Wrap">
+                <p class="p2">Declare array:
+                    <!-- Visa snippet med let array = []; -->
+                </p> <img class="smoll" src="Skärmklipp-array.PNG">
+                </div>
+
+                <div class="Wrap">
+                <p class="p2">Initiate array:
+                    <!-- Visa snippet med let anotherArray = ["java", "is", "boring"]; -->
+                </p> <img class="smoll" src="anotherarray.PNG">
+                </div>
+                <div class="Wrap">
+                <p class="p2">Read value (arrays starts at value 0):
+                    <!-- Visa snippet med let boringLanguage = anotherArray[0]; -->
+                </p> <img class="smoll" src="boooring.PNG">
+                </div>
+
+                <div class="Wrap">
+                <p class="p2">Update value in array:
+                    <!-- Visa snippet med anotherArray[0] = "css"; -->
+                </p> <img class="smoll" src="another.PNG">
+                </div>
+
+            </div>
+
+            <script>
+                let array = [];
+                let anotherArray = ["java", "is", "boring"];
+                // "java"
+                let boringLanguage = anotherArray[0];
+
+                anotherArray[0] = "css";
+            </script>
         </li>
 
         <li class="Dekonstruering">
-          <h2>Destructuring</h2>
-          <p> 
-              The destructuring assignment syntax is a 
-              JavaScript expression that makes it possible to 
-              unpack values from arrays, or properties from objects, 
-              into distinct variables.
-              <br><br>
-              The destructuring assignment syntax is a JavaScript 
-              expression that makes it possible to unpack values 
-              from arrays, or properties from objects, into distinct 
-              variables.
-              <br><br>
-              All of the variables below are all assigned the same value.
-              <br><br>
-              When pressing the "Click Me!" button; an array containing 
-              unique values will be destructed and assigned to the aforementioned 
-              variables.
-          </p>
-          <div id="destructuring-container">
-              <div id="destructuring-example">
-                  <button id="destructuring-example-button">Click Me!</button>
-                  <p id="greet-1"></p>
-                  <p id="greet-2"></p>
-                  <p id="greet-3"></p>
-                  
-              </div>
-          </div>
-          <script>
-              let greet1 = greet2 = greet3 = "Hej";
-              const greetArray = ["Zdravo", "Priviet", "Hola"];
-              setElements();
-              function setElements() {
-                  document.getElementById(`greet-1`).innerHTML = greet1;
-                  document.getElementById(`greet-2`).innerHTML = greet2;
-                  document.getElementById(`greet-3`).innerHTML = greet3;
-              }
-              document.getElementById("destructuring-example-button").onclick = function() {
-                  [greet1, greet2, greet3] = greetArray;
-                  setElements();
-              }
-          </script>
-          <h2>Source-code</h2>
-          <img src="Skärmklipp-destructuring.PNG"/>
+            <h2>Destructuring</h2>
+            <p>
+                The destructuring assignment syntax is a
+                JavaScript expression that makes it possible to
+                unpack values from arrays, or properties from objects,
+                into distinct variables.
+                <br><br>
+                The destructuring assignment syntax is a JavaScript
+                expression that makes it possible to unpack values
+                from arrays, or properties from objects, into distinct
+                variables.
+                <br><br>
+                All of the variables below are all assigned the same value.
+                <br><br>
+                When pressing the "Click Me!" button; an array containing
+                unique values will be destructed and assigned to the aforementioned
+                variables.
+            </p>
+            <div id="destructuring-container">
+                <div id="destructuring-example">
+                    <button id="destructuring-example-button">Click Me!</button>
+                    <p id="greet-1"></p>
+                    <p id="greet-2"></p>
+                    <p id="greet-3"></p>
+
+                </div>
+            </div>
+            <script>
+                let greet1 = greet2 = greet3 = "Hej";
+                const greetArray = ["Zdravo", "Priviet", "Hola"];
+                setElements();
+                function setElements() {
+                    document.getElementById(`greet-1`).innerHTML = greet1;
+                    document.getElementById(`greet-2`).innerHTML = greet2;
+                    document.getElementById(`greet-3`).innerHTML = greet3;
+                }
+                document.getElementById("destructuring-example-button").onclick = function () {
+                    [greet1, greet2, greet3] = greetArray;
+                    setElements();
+                }
+            </script>
+            <h2>Source-code</h2>
+            <img src="Skärmklipp-destructuring.PNG" />
         </li>
 
         <li class="Spread">
-          <h2>Spread</h2>
-          <p>
-              Spread syntax allows an iterable such as an array expression 
-              or string to be expanded in places where zero or more arguments 
-              (for function calls) or elements (for array literals) are expected, 
-              or an object expression to be expanded in places where zero or more 
-              key-value pairs (for object literals) are expected.
-              <br><br>
-              Spread syntax allows an iterable such as an array expression or 
-              string to be expanded in places where zero or more arguments (for 
-              function calls) or elements (for array literals) are expected, or 
-              an object expression to be expanded in places where zero or more 
-              key-value pairs (for object literals) are expected.
-              <br><br>
-              Below is a follow-up to the previous example. Now there are six 
-              greetings instead of three, but the original greetArray is kept.
-              <br><br>
-              By using the spread operator we are able to add another array 
-              with new phrases into the original array w/o any hassle.
-              <br><br>
-              By clicking the "Click Me!" button three new phares will appear
-          </p>
-          <div id="spread-container">
-              <div id="spread-example">
-                <button id="spread-example-button">Click Me!</button>
-                  <p id="greeto-1"></p>
-                  <p id="greeto-2"></p>
-                  <p id="greeto-3"></p>
-                  <p id="greeto-4"></p>
-                  <p id="greeto-5"></p>
-                  <p id="greeto-6"></p>
-                  
-              </div>
-          </div>
-          <script>
-              let greeto1 = greeto2 = greeto3 = greeto4 = greeto5 = greeto6 = "Hej";
-              let greetoArray = ["Zdravo", "Priviet", "Hola"];
-              let swedishGreetings = ["Tjena", "Läget", "Hejsan"];
-              setElementos();
-          
-              function setElementos() {
-                  document.getElementById(`greeto-1`).innerHTML = greeto1;
-                  document.getElementById(`greeto-2`).innerHTML = greeto2;
-                  document.getElementById(`greeto-3`).innerHTML = greeto3;
-                  document.getElementById(`greeto-4`).innerHTML = greeto4;
-                  document.getElementById(`greeto-5`).innerHTML = greeto5;
-                  document.getElementById(`greeto-6`).innerHTML = greeto6;
-              }
-          
-              document.getElementById("spread-example-button").onclick = function() {
-                  greetoArray.push(...swedishGreetings);
-                  [greeto1, greeto2, greeto3, greeto4, greeto5, greeto6] = greetoArray;
-                  setElementos();
-              }
-                  
-          </script>
-          <h2>Source-code</h2>
-          <img src="Skärmklipp-Spread.PNG"/>
-      
+            <h2>Spread</h2>
+            <p>
+                Spread syntax allows an iterable such as an array expression
+                or string to be expanded in places where zero or more arguments
+                (for function calls) or elements (for array literals) are expected,
+                or an object expression to be expanded in places where zero or more
+                key-value pairs (for object literals) are expected.
+                <br><br>
+                Spread syntax allows an iterable such as an array expression or
+                string to be expanded in places where zero or more arguments (for
+                function calls) or elements (for array literals) are expected, or
+                an object expression to be expanded in places where zero or more
+                key-value pairs (for object literals) are expected.
+                <br><br>
+                Below is a follow-up to the previous example. Now there are six
+                greetings instead of three, but the original greetArray is kept.
+                <br><br>
+                By using the spread operator we are able to add another array
+                with new phrases into the original array w/o any hassle.
+                <br><br>
+                By clicking the "Click Me!" button three new phares will appear
+            </p>
+            <div id="spread-container">
+                <div id="spread-example">
+                    <button id="spread-example-button">Click Me!</button>
+                    <p id="greeto-1"></p>
+                    <p id="greeto-2"></p>
+                    <p id="greeto-3"></p>
+                    <p id="greeto-4"></p>
+                    <p id="greeto-5"></p>
+                    <p id="greeto-6"></p>
+
+                </div>
+            </div>
+            <script>
+                let greeto1 = greeto2 = greeto3 = greeto4 = greeto5 = greeto6 = "Hej";
+                let greetoArray = ["Zdravo", "Priviet", "Hola"];
+                let swedishGreetings = ["Tjena", "Läget", "Hejsan"];
+                setElementos();
+
+                function setElementos() {
+                    document.getElementById(`greeto-1`).innerHTML = greeto1;
+                    document.getElementById(`greeto-2`).innerHTML = greeto2;
+                    document.getElementById(`greeto-3`).innerHTML = greeto3;
+                    document.getElementById(`greeto-4`).innerHTML = greeto4;
+                    document.getElementById(`greeto-5`).innerHTML = greeto5;
+                    document.getElementById(`greeto-6`).innerHTML = greeto6;
+                }
+
+                document.getElementById("spread-example-button").onclick = function () {
+                    greetoArray.push(...swedishGreetings);
+                    [greeto1, greeto2, greeto3, greeto4, greeto5, greeto6] = greetoArray;
+                    setElementos();
+                }
+
+            </script>
+            <h2>Source-code</h2>
+            <img src="Skärmklipp-Spread.PNG" />
+
         </li>
 
 
         <li class="ArrayMap">
-          <h2>Array Map</h2>
-          <p>
+            <h2>Array Map</h2>
+            <p>
                 The map() method creates a new array with the result of calling a function for every array element.
             </p>
             <div class="array_map">
                 <div class="Exempel">
-                    <h3></h3>        
                     <button onclick="getExempel1()">Exempel</button>
-                    <div class="svar" id="1">
-                        
-                    </div>
+                    <p class="svar" id="1">
+
+                    </p>
                 </div>
                 <div class="Exempel">
                     <h3>Parameters for function:</h3>
-                    <p>currentValue = Required . The value of the current element.</p>            
+                    <p>currentValue = Required . The value of the current element.</p>
                     <button onclick="getExempel2()">Exempel</button>
-                    <div class="svar" id="2">
-                        
-                    </div>
+                    <p class="svar" id="2">
+
+                    </p>
                 </div>
                 <div class="Exempel">
                     <p>index = Optional. The array index of the current element.</p>
-        
+
                     <button onclick="getExempel3()">Exempel</button>
-                    <div class="svar" id="3">
+                    <p class="svar" id="3">
+                        </p>
                         <script>
                             let numberArray = [50, 23, 5, 6, 47];
-let newArray = numberArray.map(timesFive)
+                            let newArray = numberArray.map(timesFive)
 
-function timesFive(numbers) {
-    return numbers * 5;
-}
+                            function timesFive(numbers) {
+                                return numbers * 5;
+                            }
 
-function getExempel1() {
-    document.getElementById("1").innerHTML = newArray;
-}
+                            function getExempel1() {
+                                document.getElementById("1").innerHTML = newArray;
+                            }
 
-// Exempel currentValue
-let currentValueArray = [5, 3, 4, 9, 6];
-let callCurrentValue = currentValueArray.map(writeValue)
+                            // Exempel currentValue
+                            let currentValueArray = [5, 3, 4, 9, 6];
+                            let callCurrentValue = currentValueArray.map(writeValue)
 
-function writeValue (values) {
-    return values;
-}
+                            function writeValue(values) {
+                                return values;
+                            }
 
-function getExempel2() {
-    document.getElementById("2").innerHTML = callCurrentValue;
-}
+                            function getExempel2() {
+                                document.getElementById("2").innerHTML = callCurrentValue;
+                            }
 
-// Exempel index
-let indexArray = [1, 2, 3, 4, 5];
-let filteredArray = indexArray.map(filter)
+                            // Exempel index
+                            let indexArray = [1, 2, 3, 4, 5];
+                            let filteredArray = indexArray.map(filter)
 
-function filter (num, index) {
-    if(index < 3) {
-        return num;
-    }
-}
+                            function filter(num, index) {
+                                if (index < 3) {
+                                    return num;
+                                }
+                            }
 
-function getExempel3() {
-    document.getElementById("3").innerHTML = filteredArray;
-}
-                        
+                            function getExempel3() {
+                                document.getElementById("3").innerHTML = filteredArray;
+                            }
+
                         </script>
-                        
+                            <img src="Gurken.PNG"/>
                     </div>
+                    
                 </div>
             </div>
         </li>
 
 
-      </div>
+    </div>
     <footer>
         <p>Page created by Olle, Matteus, Erik, Viktor</p>
     </footer>
 </body>
+
 </html>
