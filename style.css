@@ -30,6 +30,8 @@ h1{
     margin-bottom: 100px;
     font-family: Walt;
     color: #edf5e1;
+    letter-spacing: 10px;
+    
 }
 
 li{
@@ -37,7 +39,13 @@ li{
     margin-bottom: 200px;
     padding: 100px;
     margin-left: 200px;
-    margin-right: 200px
+    margin-right: 200px;
+
+    /* border: 3px solid #edf5e1;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+    padding-bottom: 300px; */
 }
 
 li p{
@@ -67,7 +75,7 @@ footer{
     padding: 20px;
 }
 
-#destructuring-example-button, #spread-example-button{
+#destructuring-example-button, #spread-example-button, button{
     color:#edf5e1;
     background-color:transparent;
     padding: 10px;
@@ -76,12 +84,19 @@ footer{
     font-size: 20px;
     transition: .5s;
     outline: none;
+    transform: translateZ(0);
+   
 }
 
-#destructuring-example-button:hover, #spread-example-button:hover{
-transform: scale(1.1);
+
+
+#destructuring-example-button:hover, #spread-example-button:hover, button:hover{
+transform: scale(1.1) translateZ(0);
 transition: .5s;
 cursor: pointer;
+-webkit-font-smoothing: subpixel-antialiased;
+backface-visibility: hidden;
+
 }
 
 img{
@@ -95,8 +110,18 @@ img{
 
 li h2:nth-of-type(2){
     margin-bottom: 10px;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
+.smoll{
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.p2{
+    display: inline-block;
+    margin-top: 10px;
+  
+}
 
 
