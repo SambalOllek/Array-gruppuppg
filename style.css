@@ -13,49 +13,90 @@
     src:url(waltograph42.otf)
 }
 
+@font-face{
+    font-family: MN;
+    src:url(Mella\ Nissa.ttf)
+}
+
 body{
-    background-color: wheat;
+    background-color: #379683;
+    color:#edf5e1;
 }
 
-.container{
-
-}
-
-.Grunder{
-
-}
-
-.Dekonstruering{
-
-}
-
-.Spread{
-
-}
-
-.ArrayMap{
-
-}
 
 h1{
     text-align: center;
     font-size: 100px;
-    margin-bottom: 175px;
+    margin-bottom: 100px;
     font-family: Walt;
+    color: #edf5e1;
 }
 
 li{
     list-style: none;
-    margin-bottom: 400px;
-    
+    margin-bottom: 200px;
+    padding: 100px;
+    margin-left: 200px;
+    margin-right: 200px
 }
+
+li p{
+    font-size: 20px;
+}
+
 
 li h2{
     text-align: center;
     margin-bottom: 75px;
     font-family: KarlaB;
+    font-size: 40px;
+    color: #edf5e1;
 }
 
 p{
     font-family: Karla;
 }
+
+footer{
+    font-size: 10px;
+    text-align: center;
+}
+
+#greet-1, #greet-2, #greet-3, #greet-4, #greet-5, #greet-6, #greeto-1, #greeto-2, #greeto-3, #greeto-4, #greeto-5, #greeto-6 {
+    display: inline-block;
+    padding: 20px;
+}
+
+#destructuring-example-button, #spread-example-button{
+    color:#edf5e1;
+    background-color:transparent;
+    padding: 10px;
+    border: 1px solid #edf5e1;
+    font-family: Karla;
+    font-size: 20px;
+    transition: .5s;
+    outline: none;
+}
+
+#destructuring-example-button:hover, #spread-example-button:hover{
+transform: scale(1.1);
+transition: .5s;
+cursor: pointer;
+}
+
+img{
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #edf5e1;
+    border-radius: 20px;
+}
+
+li h2:nth-of-type(2){
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+
+
+

@@ -14,31 +14,148 @@
     <div class="container">
 
         <li class="Grunder">
-          <h2>Grunder</h2>
+          <h2>Basics</h2>
           <p>
-            
+              Arrays are list-like objects whose prototype 
+              has methods to perform traversal and mutation 
+              operations. Neither the length of a JavaScript 
+              array nor the types of its elements are fixed. 
+              Since an array's length can change at any time, 
+              and data can be stored at non-contiguous locations
+               in the array, JavaScript arrays are not guaranteed 
+               to be dense; this depends on how the programmer 
+               chooses to use them.
+               <br><br>
+               The first step in creating an array is creating a 
+               variable that will hold the array, just as you would 
+               any other variable. Array variables indicate the type 
+               of object the array will hold (just as they do for any 
+               variable) and the name of the array, followed by empty 
+               brackets; [ ]
+              <br><br>
+              To reach the index of an array element you may use indexOf( ). 
+              This enables you to edit specific values in the array as well 
+              as add new values in specific locations. 
+
           </p>
         </li>
 
         <li class="Dekonstruering">
-          <h2>Dekonstruering</h2>
+          <h2>Destructuring</h2>
           <p> 
-
+              The destructuring assignment syntax is a 
+              JavaScript expression that makes it possible to 
+              unpack values from arrays, or properties from objects, 
+              into distinct variables.
+              <br><br>
+              The destructuring assignment syntax is a JavaScript 
+              expression that makes it possible to unpack values 
+              from arrays, or properties from objects, into distinct 
+              variables.
+              <br><br>
+              All of the variables below are all assigned the same value.
+              <br><br>
+              When clicking the "Click Me!" button an array containing 
+              unique values will be destructed and assigned to the aforementioned 
+              variables.
           </p>
+          <div id="destructuring-container">
+              <div id="destructuring-example">
+                  <button id="destructuring-example-button">Click Me!</button>
+                  <p id="greet-1"></p>
+                  <p id="greet-2"></p>
+                  <p id="greet-3"></p>
+                  
+              </div>
+          </div>
+          <script>
+              let greet1 = greet2 = greet3 = "Hej";
+              const greetArray = ["Zdravo", "Priviet", "Hola"];
+              setElements();
+              function setElements() {
+                  document.getElementById(`greet-1`).innerHTML = greet1;
+                  document.getElementById(`greet-2`).innerHTML = greet2;
+                  document.getElementById(`greet-3`).innerHTML = greet3;
+              }
+              document.getElementById("destructuring-example-button").onclick = function() {
+                  [greet1, greet2, greet3] = greetArray;
+                  setElements();
+              }
+          </script>
+          <h2>Source-code</h2>
+          <img src="Skärmklipp-destructuring.PNG"/>
         </li>
-
 
         <li class="Spread">
           <h2>Spread</h2>
           <p>
-
+              Spread syntax allows an iterable such as an array expression 
+              or string to be expanded in places where zero or more arguments 
+              (for function calls) or elements (for array literals) are expected, 
+              or an object expression to be expanded in places where zero or more 
+              key-value pairs (for object literals) are expected.
+              <br><br>
+              Spread syntax allows an iterable such as an array expression or 
+              string to be expanded in places where zero or more arguments (for 
+              function calls) or elements (for array literals) are expected, or 
+              an object expression to be expanded in places where zero or more 
+              key-value pairs (for object literals) are expected.
+              <br><br>
+              Below is a follow-up to the previous example. Now there are six 
+              greetings instead of three, but the original greetArray is kept.
+              <br><br>
+              By using the spread operator we are able to add another array 
+              with new phrases into the original array w/o any hassle.
+              <br><br>
+              By clicking the "Click Me!" button three new phares will appear
           </p>
+          <div id="spread-container">
+              <div id="spread-example">
+                <button id="spread-example-button">Click Me!</button>
+                  <p id="greeto-1"></p>
+                  <p id="greeto-2"></p>
+                  <p id="greeto-3"></p>
+                  <p id="greeto-4"></p>
+                  <p id="greeto-5"></p>
+                  <p id="greeto-6"></p>
+                  
+              </div>
+          </div>
+          <script>
+              let greeto1 = greeto2 = greeto3 = greeto4 = greeto5 = greeto6 = "Hej";
+              let greetoArray = ["Zdravo", "Priviet", "Hola"];
+              let swedishGreetings = ["Tjena", "Läget", "Hejsan"];
+              setElements();
+          
+              function setElements() {
+                  document.getElementById(`greeto-1`).innerHTML = greeto1;
+                  document.getElementById(`greeto-2`).innerHTML = greeto2;
+                  document.getElementById(`greeto-3`).innerHTML = greeto3;
+                  document.getElementById(`greeto-4`).innerHTML = greeto4;
+                  document.getElementById(`greeto-5`).innerHTML = greeto5;
+                  document.getElementById(`greeto-6`).innerHTML = greeto6;
+              }
+          
+              document.getElementById("spread-example-button").onclick = function() {
+                  greetoArray.push(...swedishGreetings);
+                  [greeto1, greeto2, greeto3, greeto4, greeto5, greeto6] = greetoArray;
+                  setElements();
+              }
+                  
+          </script>
+          <h2>Source-code</h2>
+          <img src="Skärmklipp-Spread.PNG"/>
+      
         </li>
 
 
         <li class="ArrayMap">
           <h2>Array Map</h2>
           <p>
+              The map() method creates a new array with the results of 
+              calling a provided function on every element in the calling 
+              array.
+
 
 
           </p>
